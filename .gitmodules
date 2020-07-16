@@ -1,0 +1,6 @@
+[submodule "proto/service_a"]
+	path = proto/service_a
+	url = https://github.com/KevinBrendel/service_a.git
+[submodule "proto/service_b"]
+	path = proto/service_b
+	url = https://github.com/KevinBrendel/service_b.git
