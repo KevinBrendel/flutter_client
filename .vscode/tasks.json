@@ -8,6 +8,12 @@
 			"type": "shell",
 			"command": "./scripts/generate_api.sh",
 			"problemMatcher": []
+		},
+		{
+			"label": "Update Submodules",
+			"type": "shell",
+			"command": "git submodule update --recursive --remote",
+			"problemMatcher": []
 		}
 	]
 }
