@@ -19,7 +19,7 @@ const ServiceAObject$json = const {
 const CombinedObject$json = const {
   '1': 'CombinedObject',
   '2': const [
-    const {'1': 'commonObject', '3': 1, '4': 1, '5': 11, '6': '.CommonObject', '10': 'commonObject'},
+    const {'1': 'commonObject', '3': 1, '4': 1, '5': 11, '6': '.common.CommonObject', '10': 'commonObject'},
     const {'1': 'serviceObject', '3': 2, '4': 1, '5': 11, '6': '.service_a.ServiceAObject', '10': 'serviceObject'},
   ],
 };
@@ -27,15 +27,15 @@ const CombinedObject$json = const {
 const ServiceAServiceBase$json = const {
   '1': 'ServiceA',
   '2': const [
-    const {'1': 'getCommonObject', '2': '.RequestObject', '3': '.CommonObject'},
-    const {'1': 'getServiceObject', '2': '.RequestObject', '3': '.service_a.ServiceAObject'},
-    const {'1': 'getCombinedObject', '2': '.RequestObject', '3': '.service_a.CombinedObject'},
+    const {'1': 'getCommonObject', '2': '.common.RequestObject', '3': '.common.CommonObject'},
+    const {'1': 'getServiceObject', '2': '.common.RequestObject', '3': '.service_a.ServiceAObject'},
+    const {'1': 'getCombinedObject', '2': '.common.RequestObject', '3': '.service_a.CombinedObject'},
   ],
 };
 
 const ServiceAServiceBase$messageJson = const {
-  '.RequestObject': $0.RequestObject$json,
-  '.CommonObject': $0.CommonObject$json,
+  '.common.RequestObject': $0.RequestObject$json,
+  '.common.CommonObject': $0.CommonObject$json,
   '.service_a.ServiceAObject': ServiceAObject$json,
   '.service_a.CombinedObject': CombinedObject$json,
 };

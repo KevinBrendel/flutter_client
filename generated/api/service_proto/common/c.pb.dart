@@ -11,7 +11,7 @@ import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
 class CommonObject extends $pb.GeneratedMessage {
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo('CommonObject', createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo('CommonObject', package: const $pb.PackageName('common'), createEmptyInstance: create)
     ..aInt64(1, 'id')
     ..aOS(2, 'name')
     ..hasRequiredFields = false
@@ -52,7 +52,7 @@ class CommonObject extends $pb.GeneratedMessage {
 }
 
 class RequestObject extends $pb.GeneratedMessage {
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo('RequestObject', createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo('RequestObject', package: const $pb.PackageName('common'), createEmptyInstance: create)
     ..aInt64(1, 'clientId', protoName: 'clientId')
     ..hasRequiredFields = false
   ;
