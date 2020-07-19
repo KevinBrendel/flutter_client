@@ -16,7 +16,7 @@ const CommonObject$json = const {
 const RequestObject$json = const {
   '1': 'RequestObject',
   '2': const [
-    const {'1': 'clientId', '3': 1, '4': 1, '5': 3, '10': 'clientId'},
+    const {'1': 'client_id', '3': 1, '4': 1, '5': 3, '10': 'clientId'},
   ],
 };
 

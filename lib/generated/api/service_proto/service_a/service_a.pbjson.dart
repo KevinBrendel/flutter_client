@@ -7,36 +7,24 @@
 
 import '../common/c.pbjson.dart' as $0;
 
-const ServiceAObject$json = const {
-  '1': 'ServiceAObject',
+const DataObjectA$json = const {
+  '1': 'DataObjectA',
   '2': const [
-    const {'1': 'id', '3': 1, '4': 1, '5': 3, '10': 'id'},
-    const {'1': 'name', '3': 2, '4': 1, '5': 9, '10': 'name'},
-    const {'1': 'condition', '3': 3, '4': 1, '5': 8, '10': 'condition'},
-  ],
-};
-
-const CombinedObject$json = const {
-  '1': 'CombinedObject',
-  '2': const [
-    const {'1': 'commonObject', '3': 1, '4': 1, '5': 11, '6': '.common.CommonObject', '10': 'commonObject'},
-    const {'1': 'serviceObject', '3': 2, '4': 1, '5': 11, '6': '.service_a.ServiceAObject', '10': 'serviceObject'},
+    const {'1': 'extra_info', '3': 1, '4': 1, '5': 9, '10': 'extraInfo'},
+    const {'1': 'common_object', '3': 2, '4': 1, '5': 11, '6': '.common.CommonObject', '10': 'commonObject'},
   ],
 };
 
 const ServiceAServiceBase$json = const {
   '1': 'ServiceA',
   '2': const [
-    const {'1': 'getCommonObject', '2': '.common.RequestObject', '3': '.common.CommonObject'},
-    const {'1': 'getServiceObject', '2': '.common.RequestObject', '3': '.service_a.ServiceAObject'},
-    const {'1': 'getCombinedObject', '2': '.common.RequestObject', '3': '.service_a.CombinedObject'},
+    const {'1': 'getDataFromB', '2': '.common.RequestObject', '3': '.service_a.DataObjectA'},
   ],
 };
 
 const ServiceAServiceBase$messageJson = const {
   '.common.RequestObject': $0.RequestObject$json,
+  '.service_a.DataObjectA': DataObjectA$json,
   '.common.CommonObject': $0.CommonObject$json,
-  '.service_a.ServiceAObject': ServiceAObject$json,
-  '.service_a.CombinedObject': CombinedObject$json,
 };
 

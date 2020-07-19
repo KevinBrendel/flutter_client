@@ -53,7 +53,7 @@ class CommonObject extends $pb.GeneratedMessage {
 
 class RequestObject extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo('RequestObject', package: const $pb.PackageName('common'), createEmptyInstance: create)
-    ..aInt64(1, 'clientId', protoName: 'clientId')
+    ..aInt64(1, 'clientId')
     ..hasRequiredFields = false
   ;
 
